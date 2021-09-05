@@ -15,7 +15,7 @@ public class Producer {
         properties.put("value.serializer", "com.Shashikant.serializer.UserSerializer");
         User_File std = new User_File();
         std.setId(1);
-        std.setName("Shashikant Tyagi");
+        std.setName("Sonali");
         std.setCourse("BTech.");
 
 
