@@ -1,4 +1,4 @@
-package com.Shashikant;
+package com.sonali;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.apache.kafka.clients.producer.KafkaProducer;
@@ -12,7 +12,7 @@ public class Producer {
         Properties properties = new Properties();
         properties.put("bootstrap.servers", "localhost:9092");
         properties.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
-        properties.put("value.serializer", "com.Shashikant.serializer.UserSerializer");
+        properties.put("value.serializer", "com.sonali.serializer.UserSerializer");
         User_File std = new User_File();
         std.setId(1);
         std.setName("Sonali");

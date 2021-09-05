@@ -1,7 +1,7 @@
-package com.Shashikant.serializer;
+package com.sonali.serializer;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.Shashikant.User_File;
+import com.sonali.User_File;
 import org.apache.kafka.common.serialization.Serializer;
 
 import java.util.Map;
