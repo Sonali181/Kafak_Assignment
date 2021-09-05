@@ -18,6 +18,7 @@ public class Producer {
         std.setName("Shashikant Tyagi");
         std.setCourse("BTech.");
 
+
         try (KafkaProducer<String, User_File> producer = new KafkaProducer(properties)) {
             producer.send(new ProducerRecord<String, User_File>("user", std));
         } catch (Exception e) {

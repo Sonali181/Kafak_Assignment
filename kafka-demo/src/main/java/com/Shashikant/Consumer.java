@@ -35,6 +35,7 @@ public class Consumer {
             while (true) {
                 ConsumerRecords<String, User_File> messages = kafkaConsumer.poll(1000);
                 for (ConsumerRecord<String, User_File> message : messages) {
+
                     ObjectMapper objectMapper = new ObjectMapper();
                     String jsonStr = objectMapper.writeValueAsString(message.value());
                     FileWriter myWriter = new FileWriter("MessageReceived.txt",true);
